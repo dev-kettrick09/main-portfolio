@@ -58,6 +58,9 @@
                 </div>
 
                 <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+
                     <div class="nav__toggle" id="nav-toggle">
                         <i class="uil uil-apps nav__icon"></i>
                     </div>
@@ -89,7 +92,7 @@
                             </a>
                         </div>
 
-                        <div class="home__blob">
+                        <div class="home__blob home__img">
                             <img src="assets/img/my-image.png" alt="Custom Blob Radius Image" style="max-width: 100%; height: auto;">
                         </div>
 
@@ -114,17 +117,17 @@
             </section>
 
             <!--==================== ABOUT ====================-->
-            <section class="about section" id="about">
+            <section class="about section container" id="about">
                 <h2 class="section__title">About Me</h2>
                 <span class="section__subtitle">My Introduction</span>
 
                 <div class="about__container container grid">
-                    <div class="home__blob about-img">
-                        <img src="assets/img/about.png" alt="Custom Blob Radius Image">
+                    <div class="about__blob">
+                        <img class="about__blob_img" src="assets/img/about.png" alt="Custom Blob Radius Image">
                     </div>
 
                     <div class="div about__data">
-                        <p class="about__description">I'm a passionate fullstack web developer with a focus on building responsive, user-friendly applications from concept to deployment. With a strong foundation in both frontend and backend technologies, I thrive on solving complex problems and creating seamless digital experiences.</p>
+                        <p class="about__description">I'm a passionate fullstack web developer with a focus on building responsive, user-friendly applications from concept to deployment. With a strong foundation in both frontend and backend technologies.</p>
 
                         <div class="about__info">
                             <div>
@@ -579,7 +582,7 @@
                     <div class="services__content">
                         <div>
                             <i class="uil uil-wrench services__icon"></i>
-                            <h3 class="services__title">Web <br> Maintenance and Support</h3>
+                            <h3 class="services__title">Web <br> Maintenance</h3>
 
                             <span class="button button--flex button--small button--link services__button">
                                 View More
@@ -811,7 +814,9 @@
         </footer>
         
         <!--==================== SCROLL TOP ====================-->
-        
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
 
         <!--==================== SWIPER JS ====================-->
         <script src="assets/js/swiper-bundle.min.js"></script>
