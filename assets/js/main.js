@@ -115,6 +115,8 @@ modalCloses.forEach((modalClose) =>{
 
 /*==================== PORTFOLIO SWIPER  ====================*/
 let swiper = new Swiper('.portfolio__container',{
+  slidesPerView: 1,
+  spaceBetween: 250,
   loop: true,
   effect: 'slide',
   speed: 600,

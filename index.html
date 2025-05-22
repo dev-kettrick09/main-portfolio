@@ -50,7 +50,7 @@
                         </li>
                         <li class="nav__item">
                             <a href="#contact" class="nav__link">
-                                <i class="uil uil-message nav__icon"></i> Contact Me
+                                <i class="uil uil-message nav__icon"></i> Contact
                             </a>
                         </li>
                     </ul>
@@ -632,7 +632,7 @@
                         <div class="portfolio__content grid swiper-slide">
                             <img src="assets/img/portfolio1.jpg" alt="" class="portfolio__img">
 
-                            <div class="portoflio__data">
+                            <div class="portflio__data">
                                 <h3 class="portfolio__title">Modern Website</h3>
                                 <p class="portfolio__description">Website adaptable to all devices, with ui components and animated interactions.</p>
                                 <a href="#" class="button button--flex button--small portfolio__button">
@@ -738,31 +738,33 @@
                         </div>
                     </div>
 
-                    <form action="" class="contact__form grid">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact__form grid">
+                        <input type="hidden" name="access_key" value="87354039-9275-4574-b261-e6fc73aac55b">
+
                         <div class="contact__inputs grid">
                             <div class="contact__content">
-                                <label for="" class="contact__label">Name</label>
-                                <input type="text" class="contact__input">
+                                <label class="contact__label">Name</label>
+                                <input type="text" class="contact__input" name="name" required>
                             </div>
                             <div class="contact__content">
-                                <label for="" class="contact__label">Email</label>
-                                <input type="email" class="contact__input">
+                                <label class="contact__label">Email</label>
+                                <input type="email" class="contact__input" name="email" required>
                             </div>
                         </div>
                         <div class="contact__content">
-                            <label for="" class="contact__label">Project</label>
-                            <input type="text" class="contact__input">
+                            <label class="contact__label">Project</label>
+                            <input type="text" class="contact__input" name="project">
                         </div>
                         <div class="contact__content">
-                            <label for="" class="contact__label">Message</label>
-                            <textarea name="" id="" rows="7" class="contact__input"></textarea>
+                            <label class="contact__label">Message</label>
+                            <textarea class="contact__input" name="message" rows="7" required></textarea>
                         </div>
 
                         <div>
-                            <a href="#" class="button button--flex">
+                            <button type="submit" class="button button--flex">
                                 Send Message
                                 <i class="uil uil-message button__icon"></i>
-                            </a>
+                            </button>
                         </div>
                     </form>
                 </div>
@@ -786,7 +788,7 @@
                             <a href="#portfolio" class="footer__link">Portfolio</a>
                         </li>
                         <li>
-                            <a href="#contact" class="footer__link">Contact Me</a>
+                            <a href="#contact" class="footer__link">Contact</a>
                         </li>
                     </ul>
 
@@ -821,9 +823,11 @@
         <!--==================== SWIPER JS ====================-->
         <script src="assets/js/swiper-bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-        
+
 
         <!--==================== MAIN JS ====================-->
         <script src="assets/js/main.js"></script>
+        <script src="assets/js/form-condition.js"></script>
+            
     </body>
 </html>
