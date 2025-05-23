@@ -114,7 +114,6 @@ body.dark-theme .footer__social {
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body {
@@ -1333,12 +1332,6 @@ img {
 }
 
 @media screen and (min-width: 1920px)  {
-  .main {
-    display: block;
-    scroll-snap-type: y mandatory;
-    overflow-y: auto;
-    align-items: unset;
-  }
   .main > section,
   .main > .section {
     min-height: 100vh;
@@ -1346,24 +1339,9 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
     scroll-snap-align: start;
   }
   
-  .qualification__container.container {
-    max-width: 1200px;
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
-  .qualification__sections {
-    grid-template-columns: 1fr;
-    justify-content: center;
-    width: 100%;
-  }
-  .qualification__data {
-    grid-template-columns: 1fr max-content 1fr;
-    column-gap: 4rem;
-  }
 }
