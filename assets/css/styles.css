@@ -1330,3 +1330,40 @@ img {
     transform: translateX(-6rem); /* Only shift far left on very large screens */
   }
 }
+
+@media screen and (min-width: 1920px)  {
+  .main > section,
+  .main > .section {
+    min-height: 100vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    scroll-snap-align: start;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scroll-snap-type: y mandatory;
+    overflow-y: auto;
+  }
+  
+  
+  .qualification__container.container {
+    max-width: 1200px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .qualification__sections {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    width: 100%;
+  }
+  .qualification__data {
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 4rem;
+  }
+}
